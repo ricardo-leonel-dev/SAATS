@@ -172,7 +172,7 @@ public class SAATS extends javax.swing.JFrame {
                 }
             }
         }
-        System.out.println(ventasRepetidases.size());
+//        System.out.println(ventasRepetidases.size());
         for (int i = 1; i < ventasRepetidases.size(); i++){
             if (ventasRepetidases.get(i).getContador()>1){
                 System.out.print(ventasRepetidases.get(i) +"\t");
