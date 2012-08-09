@@ -172,7 +172,7 @@ public class SAATS extends javax.swing.JFrame {
                 }
             }
         }
-//        System.out.println(ventasRepetidases.size());
+        System.out.println(ventasRepetidases.size());
         for (int i = 1; i < ventasRepetidases.size(); i++){
             if (ventasRepetidases.get(i).getContador()>1){
                 System.out.print(ventasRepetidases.get(i) +"\t");
@@ -248,19 +248,19 @@ public class SAATS extends javax.swing.JFrame {
         for (int i=0; i<lineasAgruparAnuladas.size(); i++){
             java.util.List<String> columnas = (java.util.List<String>) lineasAgruparAnuladas.get(i);
             String tipoComprobante = "";
-            if (columnas.get(3).equals("F"))//FACTURA
+            if (columnas.get(6).equals("F"))//FACTURA
                 tipoComprobante = "1";
-            if (columnas.get(3).equals("NV"))//NOTA DE VENTA
+            if (columnas.get(6).equals("NV"))//NOTA DE VENTA
                 tipoComprobante = "2";
-            if (columnas.get(3).equals("LC"))//LIQUIDACION DE COMPRA
+            if (columnas.get(6).equals("LC"))//LIQUIDACION DE COMPRA
                 tipoComprobante = "3";
-            if (columnas.get(3).equals("NC"))//NOTA DE CREDITO
+            if (columnas.get(6).equals("NC"))//NOTA DE CREDITO
                 tipoComprobante = "4";
-            if (columnas.get(3).equals("ND"))//NOTA DE DEBITO
+            if (columnas.get(6).equals("ND"))//NOTA DE DEBITO
                 tipoComprobante = "5";
-            if (columnas.get(3).equals("GR"))//GUIA DE REMISION
+            if (columnas.get(6).equals("GR"))//GUIA DE REMISION
                 tipoComprobante = "6";
-            if (columnas.get(3).equals("R"))//RETENCIONES
+            if (columnas.get(6).equals("R"))//RETENCIONES
                 tipoComprobante = "7";
             listaCuerpo.add(
                 "09"+"\t"+//constante
